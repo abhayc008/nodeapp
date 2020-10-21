@@ -5,6 +5,10 @@ app.get('/',(req,res) => {
     res.send("Hello word from node.js app.")
 });
 
+app.get('/api/product',(req,res) => {
+    res.send("Responce from product API")
+});
+
 
 app.listen(3000,() =>{
     console.log("server is up on 3000.")
